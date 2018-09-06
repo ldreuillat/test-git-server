@@ -140,6 +140,8 @@
   </profiles>
 
   <scm>
-    <tag>v1.0</tag>
+    <connection>scm:git:https://github.com/ldreuillat/release-project.git</connection>
+    <url>https://github.com/ldreuillat/release-project</url>
+    <developerConnection>scm:git:https://github.com/ldreuillat/release-project.git</developerConnection>
   </scm>
 </project>
