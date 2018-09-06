@@ -101,6 +101,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.1</version>
+        <configuration>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
+          <releaseProfiles>release</releaseProfiles>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -125,7 +129,7 @@
             </executions>
             <configuration>
               <serverId>nexus-releases</serverId>
-              <nexusUrl>http://10.32.0.198/nexus/repository/maven-releases</nexusUrl>
+              <nexusUrl>http://10.32.0.198/nexus/repository/maven-releases/</nexusUrl>
               <skipStaging>true</skipStaging>
             </configuration>
           </plugin>

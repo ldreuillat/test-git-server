@@ -33,5 +33,7 @@ public class Constants {
     public static final String NOTICE_BIBLIO = "NoticeBib";
     public static final String DOC_NUMERIQUE = "DocNumerique";
 
+    public static final String TEST1 = "test1";
+
     private Constants() {}
 }
