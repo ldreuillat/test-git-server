@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
+    <version>9.10</version>
+  </parent>
+
+  <groupId>com.ausy.release</groupId>
+  <artifactId>release-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Release parent</name>
+  <description>Projet Release parent</description>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>release-common</module>
+    <module>release-core</module>
+  </modules>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://10.32.0.198/nexus/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://10.32.0.198/nexus/repository/maven-releases/</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>maven-group</id>
+      <url>http://10.32.0.198/nexus/repository/maven-public/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>public</id>
+      <url>http://10.32.0.198/nexus/repository/maven-public/</url>
+      <name>Nuxeo releases</name>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.ausy.release</groupId>
+        <artifactId>release-common</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.ausy.release</groupId>
+        <artifactId>release-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+ 
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-importer-jaxrs</artifactId>
+        <version>9.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-importer-scan</artifactId>
+        <version>9.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-importer-xml-parser</artifactId>
+        <version>9.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-importer-scan-xml-parser</artifactId>
+        <version>9.10</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.nuxeo.ecm.platform</groupId>
+        <artifactId>nuxeo-importer-stream</artifactId>
+        <version>9.10</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>

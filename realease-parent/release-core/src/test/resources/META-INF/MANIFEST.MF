@@ -1,0 +1,12 @@
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Manifest-Version: 1.0
+Bundle-Vendor: com.dga.clade.nuxeo
+Bundle-Version: 1.0.0
+Bundle-Name: clade-nuxeo-core-tests
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.dga.clade.nuxeo.core.tests;singleton=true
+Nuxeo-Component: OSGI-INF/clade-core-schemas.xml,
+ OSGI-INF/clade-core-types.xml,
+ OSGI-INF/clade-core-operation.xml,
+ OSGI-INF/clade-core-custom-versioning.xml
