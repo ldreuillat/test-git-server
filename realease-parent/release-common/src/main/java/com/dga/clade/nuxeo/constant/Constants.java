@@ -34,6 +34,7 @@ public class Constants {
     public static final String DOC_NUMERIQUE = "DocNumerique";
 
     public static final String TEST1 = "test1";
+    public static final String TEST2 = "test2";
 
     private Constants() {}
 }
