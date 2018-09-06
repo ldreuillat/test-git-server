@@ -39,6 +39,7 @@ public class Constants {
     public static final String TEST4 = "test4";
     public static final String TEST5 = "test5";
     public static final String TEST6 = "test6";
+    public static final String TEST7 = "test7";
 
     private Constants() {}
 }

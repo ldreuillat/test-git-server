@@ -156,5 +156,6 @@
 
   <properties>
     <project.scm.id>githubldt</project.scm.id>
+    <maven.javadoc.skip>true</maven.javadoc.skip>
   </properties>
 </project>
