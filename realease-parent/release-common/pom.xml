@@ -5,7 +5,7 @@
     <groupId>com.ausy.release</groupId>
     <artifactId>release-parent</artifactId>
     <relativePath>../pom.xml</relativePath>
-    <version>1.2</version>
+    <version>1.3-SNAPSHOT</version>
   </parent>
   <artifactId>release-common</artifactId>
   <name>Release common</name>
