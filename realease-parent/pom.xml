@@ -9,7 +9,7 @@
 
   <groupId>com.ausy.release</groupId>
   <artifactId>release-parent</artifactId>
-  <version>1.12-SNAPSHOT</version>
+  <version>1.12</version>
   <name>Release parent</name>
   <description>Projet Release parent</description>
   <packaging>pom</packaging>
@@ -55,12 +55,12 @@
       <dependency>
         <groupId>com.ausy.release</groupId>
         <artifactId>release-common</artifactId>
-        <version>1.12-SNAPSHOT</version>
+        <version>1.12</version>
       </dependency>
       <dependency>
         <groupId>com.ausy.release</groupId>
         <artifactId>release-core</artifactId>
-        <version>1.12-SNAPSHOT</version>
+        <version>1.12</version>
       </dependency>
  
       <dependency>
@@ -159,7 +159,7 @@
     <connection>scm:git:https://github.com/ldreuillat/release-project.git</connection>
     <url>https://github.com/ldreuillat/release-project</url>
     <developerConnection>scm:git:https://github.com/ldreuillat/release-project.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v1.12</tag>
   </scm>
 
   <properties>
