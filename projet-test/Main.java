@@ -5,5 +5,6 @@ public class Main {
 		System.out.println("Hello from GitHub Devel by the Master!");
 		int i = 0;
 		i++;
+		System.out.println("counter i = " + i);
 	}
 }
