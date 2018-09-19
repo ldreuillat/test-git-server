@@ -7,5 +7,6 @@ public class Main {
 		i++;
 		System.out.println("counter i = " + i);
 		int j = 0;
+		int x = 2;
 	}
 }
