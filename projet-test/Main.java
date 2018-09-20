@@ -1,5 +1,5 @@
 public class Main {
-	private static final String VERSION = "v2.0";
+	private static final String VERSION = "v2.1";
 	
 	public static void main(String[] args) {
 		System.out.println("Hello from GitHub Devel by the Master!");
